@@ -2,9 +2,19 @@ import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
 
 export default function Accueil() {
+    const photos = [
+    "./src/assets/Accueil/carousel/carousel1.png",
+    "./src/assets/Accueil/carousel/carousel2.png",
+    "./src/assets/Accueil/carousel/carousel3.png",
+    "./src/assets/Accueil/carousel/carousel4.png",
+    "./src/assets/Accueil/carousel/carousel5.png",
+    "./src/assets/Accueil/carousel/carousel6.png",
+    "./src/assets/Accueil/carousel/carousel7.png",
+  ];
+
   return (
     <>
-      <section id="about" className="box-content mx-auto lg:max-w-5xl">
+      <section className="box-content mx-auto lg:max-w-5xl">
         <img
           src="../src/assets/Accueil/passion-canopees.png"
           className="box-content object-cover h-auto"
@@ -39,7 +49,7 @@ export default function Accueil() {
           </p>
         </div>
       </section>
-      <section id="about" className="box-content mx-auto lg:max-w-5xl">
+      <section className="box-content mx-auto lg:max-w-5xl">
         <div>
           <h2>Particuliers, Professionnels, Collectivitées</h2>
           <p>
@@ -57,7 +67,10 @@ export default function Accueil() {
         </div>
         <Slider />
       </section>
-      <Carousel />
+      <section className="flex-col mx-auto">
+        <h2 className="text-center">Exemples de réalisations</h2>
+        <Carousel photos={photos} startIndex={3}/>
+      </section>
     </>
   );
 }

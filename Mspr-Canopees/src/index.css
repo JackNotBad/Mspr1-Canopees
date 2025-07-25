@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --blue: #2a4b9b;
   --mauve: #692b85;
