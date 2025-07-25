@@ -19,15 +19,12 @@ export default function Slider() {
   }, []);
 
   return (
-    <div>
-      <div className="relative w-110 h-135 overflow-hidden">
+      <div className="relative w-full lg:h-200 h-120 overflow-hidden">
         <img
           src={images[index]}
           alt="mutiple pictures of gardens"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
-        
       </div>
-    </div>
   );
 }

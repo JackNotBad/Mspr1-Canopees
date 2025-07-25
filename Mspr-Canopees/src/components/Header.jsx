@@ -2,7 +2,7 @@ import Navbar from "../Navbar";
 
 export default function Header() {
   return (
-    <header className="bg-[var(--blue)] text-[var(--light-white)] p-4 flex justify-between items-center">
+    <header className="bg-[var(--blue)] text-[var(--light-white)]">
       <nav>
         <Navbar />
       </nav>
