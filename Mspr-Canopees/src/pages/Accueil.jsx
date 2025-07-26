@@ -44,16 +44,12 @@ export default function Accueil() {
           mb-0
           lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
         ">
-          <h2>Canopées, c’est avant tout une équipe de passionnés</h2>
-          <p>Depuis 2020, Canopées entretiennent les jardins.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
-            lacus viverra, pretium metus et, condimentum leo. Sed lacus sapien,
-            accumsan ut tellus vel, sollicitudin aliquam ligula. Donec ex metus,
-            vehicula in magna eu, semper pulvinar felis. Curabitur elementum
-            gravida leo, ut fringilla est placerat eu. Suspendisse potenti.
-            Maecenas sapien justo, semper non finibus sit amet, elementum nec
-            arcu. Phasellus vitae mi mollis, rhoncus ex aliquam, pulvinar sem.
+          <h2 className="mb-5">Canopées, c’est avant tout une équipe de passionnés</h2>
+          <p className="whitespace-pre-line">{`Depuis 2020, Canopées entretiennent les jardins.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus viverra, pretium metus et, condimentum leo. Sed lacus sapien, accumsan ut tellus vel, sollicitudin aliquam ligula. Donec ex metus, vehicula in magna eu, semper pulvinar felis. Curabitur elementum gravida leo, ut fringilla est placerat eu. Suspendisse potenti.
+            
+            Maecenas sapien justo, semper non finibus sit amet, elementum nec arcu. Phasellus vitae mi mollis, rhoncus ex aliquam, pulvinar sem.`}
           </p>
         </div>
       </section>
@@ -65,18 +61,18 @@ export default function Accueil() {
         lg:flex-row lg:text-left lg:max-w-300 lg:py-26
       ">
         <div>
-          <h2>Particuliers, Professionnels, Collectivitées</h2>
-          <p>
-            Voici des exemples types de réalisations possibles :
+          <h2 className="mb-5">Particuliers, Professionnels, Collectivitées</h2>
+          <p className="whitespace-pre-line">
+            {`Voici des exemples types de réalisations possibles :
             Créations à la carte
             Valorisation des déchets verts
-            Espaces communaux
+            Espaces communaux`}
           </p>
         </div>
         <Slider />
       </section>
       <section className="flex-col max-w-300 px-5 mx-auto box-content flex">
-        <h2 className="text-center">Exemples de réalisations</h2>
+        <h2 className="text-center mb-5">Exemples de réalisations</h2>
         <Carousel photos={photos} startIndex={3}/>
       </section>
     </>

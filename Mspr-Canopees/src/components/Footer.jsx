@@ -29,10 +29,10 @@ export default function Footer() {
         <div className="w-42">
           <p className="text-[var(--orange)!important] ml-0">Social Media</p>
           <ul>
-            <li className="inline-block w-6"><img src={facebook} alt="Lien vers la page facebook" /></li>
-            <li className="inline-block w-6"><img src={twitter} alt="Lien vers la page twitter" /></li>
-            <li className="inline-block w-6"><img src={linkedin} alt="Lien vers la page linkedin" /></li>
-            <li className="inline-block w-6"><img src={tiktok} alt="Lien vers la page tiktok" /></li>
+            <li className="inline-block w-6 mx-1"><img src={facebook} alt="Lien vers la page facebook" /></li>
+            <li className="inline-block w-6 mx-1"><img src={twitter} alt="Lien vers la page twitter" /></li>
+            <li className="inline-block w-6 mx-1"><img src={linkedin} alt="Lien vers la page linkedin" /></li>
+            <li className="inline-block w-6 mx-1"><img src={tiktok} alt="Lien vers la page tiktok" /></li>
           </ul>
         </div>
       </div>
