@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom";
 import hamburger from "./assets/hamburger.svg"
 import close from "./assets/close.svg"
@@ -7,27 +7,27 @@ import close from "./assets/close.svg"
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false)
   return (
-    <nav className="fixed top-0 w-full flex justify-center p-4 bg-[var(--blue)]">
-        <ul className={`${showMenu ? "flex" : "hidden"} flex-col items-center bg-[var(--blue)] w-full absolute top-full pb-5 sm:flex sm:relative sm:flex-row sm:pb-0 sm:justify-center`}>
+    <nav className="absolute top-20 right-45 flex justify-center p-4">
+        <ul className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full pb-5 lg:flex lg:relative lg:flex-row lg:pb-0 lg:justify-center lg:space-x-6`}>
             <li>
-                <Link className="inline-block py-2 mx-4 text-lg text-[var(--light-white)] sm:py-0" to="/accueil">Accueil</Link>
+                <Link to="/" className="inline-block py-2 text-lg lg:py-0">Accueil</Link>
             </li>
             <li>
-                <Link className="inline-block py-2 mx-4 text-lg text-[var(--light-white)] sm:py-0" to="/about">Qui sommes-nous</Link>
+                <Link to="/about" className="inline-block py-2 text-lg lg:py-0">Présentation</Link>
             </li>
             <li>
-                <Link className="inline-block py-2 mx-4 text-lg text-[var(--light-white)] sm:py-0" to="/prestations">Prestations</Link>
+                <Link to="/prestations" className="inline-block py-2 text-lg lg:py-0">Prestations</Link>
             </li>
             <li>
-                <Link className="inline-block py-2 mx-4 text-lg text-[var(--light-white)] sm:py-0" to="/tarifs">Tarifs</Link>
+                <Link to="/tarifs" className="inline-block py-2 text-lg lg:py-0">Tarifs</Link>
             </li>
             <li>
-                <Link className="inline-block py-2 mx-4 text-lg text-[var(--light-white)] sm:py-0" to="/contact">Contact</Link>
+                <Link to="/contact" className="inline-block py-2 text-lg lg:py-0">Contact</Link>
             </li>
         </ul>
         <button
         onClick={() => setShowMenu(!showMenu)}
-        className="ml-auto sm:hidden"
+        className="ml-auto lg:hidden"
         >
             <img 
             className="w-4"

@@ -46,7 +46,7 @@ export default function Contact() {
           ></textarea>
           <button
             type="submit"
-            className="bg-[var(--blue)] text-white px-6 py-3 rounded hover:bg-[var(--mauve)]"
+            className="bg-blue text-white px-6 py-3 rounded hover:bg-[var(--mauve)]"
           >
             Envoyer
           </button>

@@ -4,7 +4,7 @@ export default function Tarifs() {
       <h2 className="text-2xl font-bold mb-6">Nos tarifs</h2>
       <table className="w-full border-collapse">
         <thead>
-          <tr className="bg-[var(--green)] text-white">
+          <tr className="bg-green text-white">
             <th className="p-3 border">Prestation</th>
             <th className="p-3 border">Tarif indicatif</th>
           </tr>

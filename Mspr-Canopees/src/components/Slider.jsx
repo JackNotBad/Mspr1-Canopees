@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
+import slide1 from "../assets/slider/slide1.png"
+import slide2 from "../assets/slider/slide2.png"
+import slide3 from "../assets/slider/slide3.png"
+import slide4 from "../assets/slider/slide4.png"
+import slide5 from "../assets/slider/slide5.png"
 
 const images = [
-  "./src/assets/slider/slide1.png",
-  "./src/assets/slider/slide2.png",
-  "./src/assets/slider/slide3.png",
-  "./src/assets/slider/slide4.png",
-  "./src/assets/slider/slide5.png",
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
 ];
 
 export default function Slider() {
@@ -19,12 +24,17 @@ export default function Slider() {
   }, []);
 
   return (
-      <div className="relative w-full lg:h-200 h-120 overflow-hidden">
+      <>
         <img
           src={images[index]}
           alt="mutiple pictures of gardens"
-          className="w-full h-full object-cover object-center"
+          className="
+          object-cover
+          max-w-88 w-full 
+          mx-auto mt-11
+          lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
+        "
         />
-      </div>
+      </>
   );
 }

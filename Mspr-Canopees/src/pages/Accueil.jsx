@@ -1,29 +1,51 @@
 import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
+import passionCanopees from "../assets/Accueil/passion-canopees.png"
+import carousel1 from "../assets/Accueil/carousel/carousel1.png"
+import carousel2 from "../assets/Accueil/carousel/carousel2.png"
+import carousel3 from "../assets/Accueil/carousel/carousel3.png"
+import carousel4 from "../assets/Accueil/carousel/carousel4.png"
+import carousel5 from "../assets/Accueil/carousel/carousel5.png"
+import carousel6 from "../assets/Accueil/carousel/carousel6.png"
+import carousel7 from "../assets/Accueil/carousel/carousel7.png"
 
 export default function Accueil() {
     const photos = [
-    "./src/assets/Accueil/carousel/carousel1.png",
-    "./src/assets/Accueil/carousel/carousel2.png",
-    "./src/assets/Accueil/carousel/carousel3.png",
-    "./src/assets/Accueil/carousel/carousel4.png",
-    "./src/assets/Accueil/carousel/carousel5.png",
-    "./src/assets/Accueil/carousel/carousel6.png",
-    "./src/assets/Accueil/carousel/carousel7.png",
+    carousel1,
+    carousel2,
+    carousel3,
+    carousel4,
+    carousel5,
+    carousel6,
+    carousel7,
   ];
 
   return (
     <>
-      <section className="box-content mx-auto lg:max-w-5xl">
+      <section 
+      className="
+        flex flex-col text-center
+        max-w-150 mx-auto px-5 pt-12 pb-38 box-content
+        lg:pt-18 lg:pb-30
+        lg:flex-row lg:text-left lg:max-w-300 lg:py-26
+      ">
         <img
-          src="../src/assets/Accueil/passion-canopees.png"
-          className="box-content object-cover h-auto"
+          src={passionCanopees}
+          className="
+          object-cover
+          max-w-88 w-full 
+          mx-auto mt-11
+          lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
+        "
           alt="part of the canopees team"
-          width="440"
         />
-        <div>
+        <div 
+          className="
+          mb-0
+          lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
+        ">
           <h2>Canopées, c’est avant tout une équipe de passionnés</h2>
-          <p>Depuis 2020, Canopées entretiennent les jardins</p>
+          <p>Depuis 2020, Canopées entretiennent les jardins.</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
             lacus viverra, pretium metus et, condimentum leo. Sed lacus sapien,
@@ -33,41 +55,27 @@ export default function Accueil() {
             Maecenas sapien justo, semper non finibus sit amet, elementum nec
             arcu. Phasellus vitae mi mollis, rhoncus ex aliquam, pulvinar sem.
           </p>
-          <p>
-            Praesent lorem lorem, placerat non orci a, faucibus posuere turpis.
-            Nunc nec pharetra risus, vitae aliquam eros. Fusce venenatis nibh
-            finibus, molestie tellus sed, gravida nisl. Quisque sit amet purus
-            sagittis, mattis augue vitae, sodales erat. Fusce vel pellentesque
-            erat. In ultrices, nunc ut tristique ultricies, libero nibh finibus
-            nisi, ac faucibus velit velit et leo. Class aptent taciti sociosqu
-            ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-            dapibus pretium risus, id condimentum libero gravida efficitur.
-            Aenean vestibulum interdum dui, vel molestie nunc blandit non.
-            Maecenas vel facilisis arcu. Sed varius tristique ultricies. Nulla
-            facilisi. Proin sit amet nunc non urna sodales finibus ut id leo.
-            Fusce in mattis neque, nec gravida justo.
-          </p>
         </div>
       </section>
-      <section className="box-content mx-auto lg:max-w-5xl">
+      <section 
+      className="
+        flex flex-col text-center
+        max-w-300 mx-auto px-5 pt-12 pb-38 box-content
+        sm:pt-18 sm:pb-30
+        lg:flex-row lg:text-left lg:max-w-300 lg:py-26
+      ">
         <div>
           <h2>Particuliers, Professionnels, Collectivitées</h2>
           <p>
-            Voici des exemples types de réalisations possibles :  
-          </p>
-          <p>
+            Voici des exemples types de réalisations possibles :
             Créations à la carte
-          </p>
-          <p>
             Valorisation des déchets verts
-          </p>
-          <p>
             Espaces communaux
           </p>
         </div>
         <Slider />
       </section>
-      <section className="flex-col mx-auto">
+      <section className="flex-col max-w-300 px-5 mx-auto box-content flex">
         <h2 className="text-center">Exemples de réalisations</h2>
         <Carousel photos={photos} startIndex={3}/>
       </section>

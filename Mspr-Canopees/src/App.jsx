@@ -13,10 +13,10 @@ import Mentions from "./pages/Mentions";
 export default function App() {
   return (
     <Router>
-      <Header />
+      <Header/>
       <main className="p-6">
         <Routes>
-          <Route path="/accueil" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/about" element={<About />} />
           <Route path="/prestations" element={<Prestations />} />
           <Route path="/tarifs" element={<Tarifs />} />
