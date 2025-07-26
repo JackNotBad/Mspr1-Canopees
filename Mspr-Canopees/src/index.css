@@ -10,6 +10,7 @@
 :root {
   --blue: #2a4b9b;
   --mauve: #692b85;
+  --mauve-opacity: rgba(105, 43, 133, 0.2);
   --green: #098136;
   --orange: #f1a80f;
   --pink: #da4d66;
@@ -35,10 +36,10 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+h3, label {
   font-size: 1.75rem;
   font-family: "Marcellus";
-  color: var(--orange);
+  color: var(--blue);
   text-transform: uppercase;
 }
 

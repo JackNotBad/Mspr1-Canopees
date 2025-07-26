@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Contact() {
-  const [form, setForm] = useState({ nom: "", email: "", message: "" });
+  const [form, setForm] = useState({ nom: "", email: "", objet: "", message: "" });
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -9,44 +9,58 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Votre demande a été envoyée !");
-    setForm({ nom: "", email: "", message: "" });
+    setForm({ nom: "", email: "", objet: "", message: "" });
   };
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">Contactez-nous</h2>
-      <div className="grid md:grid-cols-2 gap-6">
+      <h2 className="mb-6 text-center">Besoin d’un devis ou d’un renseignement ? Notre équipe vous répond dans les plus brefs délais.</h2>
+
+      <div className="grid md:grid-cols-1 gap-6 w-fit mx-auto">
         <form onSubmit={handleSubmit} className="space-y-4">
+          <label htmlFor="nom">Nom</label>
           <input
             type="text"
             name="nom"
             placeholder="Votre nom"
             value={form.nom}
             onChange={handleChange}
-            className="w-full p-3 border rounded"
+            className="bg-[var(--mauve-opacity)] w-full p-3 border rounded"
             required
           />
+          <label htmlFor="email">Adresse e-mail</label>
           <input
             type="email"
             name="email"
             placeholder="Votre email"
             value={form.email}
             onChange={handleChange}
-            className="w-full p-3 border rounded"
+            className="bg-[var(--mauve-opacity)] w-full p-3 border rounded"
             required
           />
+          <label htmlFor="objet">Objet</label>
+          <input
+            type="text"
+            name="objet"
+            placeholder="Objet"
+            value={form.objet}
+            onChange={handleChange}
+            className="bg-[var(--mauve-opacity)] w-full p-3 border rounded"
+            required
+          />
+          <label htmlFor="message">Votre message</label>
           <textarea
             name="message"
             placeholder="Votre message"
             value={form.message}
             onChange={handleChange}
-            className="w-full p-3 border rounded"
+            className="bg-[var(--mauve-opacity)] w-full p-3 border rounded"
             rows="5"
             required
           ></textarea>
           <button
             type="submit"
-            className="bg-blue text-white px-6 py-3 rounded hover:bg-[var(--mauve)]"
+            className="bg-[var(--orange)] font-bold text-[var(--mauve)] px-6 py-3 rounded hover:bg-[var(--pink)] block mx-auto"
           >
             Envoyer
           </button>
