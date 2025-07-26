@@ -13,7 +13,7 @@ import EEV4 from "../assets/Entretien des espaces verts/EEV - Visuel 4.png"
 import THPrincipal from "../assets/Taille des haies/TH - Visuel principal.png"
 import TH1 from "../assets/Taille des haies/TH - Visuel 1.png"
 import TH2 from "../assets/Taille des haies/TH - Visuel 2.png"
-import Th2 from "../assets/Taille des haies/TH - Visuel 3.png"
+import TH3 from "../assets/Taille des haies/TH - Visuel 3.png"
 import TH4 from "../assets/Taille des haies/TH - Visuel 4.png"
 import EAAPrincipal from "../assets/Élagage et abatage d’arbres/EAA - Visuel principal.png"
 import EAA1 from "../assets/Élagage et abatage d’arbres/EAA - Visuel 1.png"
@@ -58,7 +58,7 @@ const prestations = [
     details: [
       TH1,
       TH2,
-      Th2,
+      TH3,
       TH4,
     ],
     paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ligula libero. Aliquam lobortis mi eget diam fermentum, eu maximus quam aliquam. Fusce porta tempus iaculis. Phasellus interdum vel eros vel finibus. Donec efficitur tellus nec nunc egestas aliquam. In vitae velit facilisis, congue ligula eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam at consectetur lorem, nec accumsan dui. Vivamus vel aliquam eros, eget dignissim sapien. Fusce efficitur tincidunt turpis a posuere. Praesent quis tincidunt nunc.",
