@@ -19,12 +19,13 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Marcellus";
   letter-spacing: 0.72px;
   color: var(--blue);
   line-height: 155.55%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h2 {
