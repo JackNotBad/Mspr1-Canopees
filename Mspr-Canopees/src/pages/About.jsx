@@ -26,8 +26,7 @@ export default function About() {
             <section 
             className="
               flex flex-col text-center
-              max-w-150 mx-auto px-5 pt-12 pb-38 box-content
-              lg:pt-18 lg:pb-30
+              max-w-150 mx-auto p-5 box-content
               lg:flex-row lg:text-left lg:max-w-300 lg:py-26
             ">
               <img
@@ -42,7 +41,7 @@ export default function About() {
               />
               <div 
                 className="
-                mb-0
+                mb-0 mt-5
                 lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
               ">
                 <h2>Notre histoire</h2>
@@ -61,8 +60,8 @@ export default function About() {
             ">
               <div 
                 className="
-                mb-0
-                lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
+                mb-0 order-2 mt-5
+                lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130 lg:order-0
               ">
                 <h2>Nos valeurs</h2>
                 <p>
@@ -86,8 +85,7 @@ export default function About() {
             <section 
             className="
               flex flex-col text-center
-              max-w-150 mx-auto px-5 pt-12 pb-38 box-content
-              lg:pt-18 lg:pb-30
+              max-w-150 mx-auto px-5 pt-12 box-content
               lg:flex-row lg:text-left lg:max-w-300 lg:py-26
             ">
               <img
@@ -95,14 +93,14 @@ export default function About() {
                 className="
                 object-contain
                 max-w-88 w-full 
-                mx-auto mt-11
+                mx-auto mt-20
                 lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
               "
                 alt="part of the canopees team"
               />
               <div 
                 className="
-                mb-0
+                mb-0 mt-5
                 lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
               ">
                 <h2>Notre Vision</h2>

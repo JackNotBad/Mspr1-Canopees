@@ -134,7 +134,7 @@ export default function Prestations() {
             </>
           ) : (
             <>
-              <div className="flex flex-col justify-center lg:max-w-135 lg:w-135 text-center lg:text-left">
+              <div className="flex flex-col justify-center order-2 lg:order-0 lg:max-w-135 lg:w-135 text-center lg:text-left">
                 <h2 className="text-xl font-semibold mb-4">{p.titre}</h2>
                 <p>{p.paragraph}</p>
                 <button

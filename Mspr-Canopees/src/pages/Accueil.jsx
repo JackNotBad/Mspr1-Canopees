@@ -25,8 +25,7 @@ export default function Accueil() {
       <section 
       className="
         flex flex-col text-center
-        max-w-150 mx-auto px-5 pt-12 pb-38 box-content
-        lg:pt-18 lg:pb-30
+        max-w-150 mx-auto px-5 p-5 box-content
         lg:flex-row lg:text-left lg:max-w-300 lg:py-26
       ">
         <img
@@ -56,11 +55,10 @@ export default function Accueil() {
       <section 
       className="
         flex flex-col text-center
-        max-w-300 mx-auto px-5 pt-12 pb-38 box-content
-        sm:pt-18 sm:pb-30
+        max-w-300 mx-auto p-5 box-content
         lg:flex-row lg:text-left lg:max-w-300 lg:py-26
       ">
-        <div>
+        <div className="order-1">
           <h2 className="mb-5">Particuliers, Professionnels, Collectivitées</h2>
           <p className="whitespace-pre-line">
             {`Voici des exemples types de réalisations possibles :

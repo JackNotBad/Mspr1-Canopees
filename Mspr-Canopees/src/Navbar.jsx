@@ -1,14 +1,10 @@
-import { useState } from "react"
 import { Link } from "react-router-dom";
-import hamburger from "./assets/hamburger.png"
-import close from "./assets/close.png"
+import hamburger from "./assets/hamburger.png";
 
-
-export default function Navbar() {
-    const [showMenu, setShowMenu] = useState(false)
+export default function Navbar({ toggleMenu }) {
   return (
-    <nav className="absolute top-20 z-20 right-20 lg:right-45 flex justify-center p-4">
-        <ul className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full pb-5 lg:flex lg:relative lg:flex-row lg:pb-0 lg:justify-center lg:space-x-6`}>
+    <nav className="absolute top-20 right-20 lg:right-45 flex justify-center p-4 z-40">
+      <ul className="hidden lg:flex lg:space-x-6">
             <li>
                 <Link to="/" className="inline-block py-2 text-lg lg:py-0">Accueil</Link>
             </li>
@@ -24,16 +20,10 @@ export default function Navbar() {
             <li>
                 <Link to="/contact" className="inline-block py-2 text-lg lg:py-0">Contact</Link>
             </li>
-        </ul>
-        <button
-        onClick={() => setShowMenu(!showMenu)}
-        className="ml-auto lg:hidden"
-        >
-            <img 
-            className="cursor-pointer"
-            src={showMenu ? close : hamburger} alt={showMenu ? "Cacher le menu" : "Montrer le menu"} />
-        </button>
-
+      </ul>
+      <button onClick={toggleMenu} className="ml-auto lg:hidden">
+        <img src={hamburger} alt="Ouvrir le menu" className="cursor-pointer" />
+      </button>
     </nav>
-  )
+  );
 }
