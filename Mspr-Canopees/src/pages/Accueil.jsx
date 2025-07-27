@@ -58,7 +58,7 @@ export default function Accueil() {
         max-w-300 mx-auto p-5 box-content
         lg:flex-row lg:text-left lg:max-w-300 lg:py-26
       ">
-        <div className="order-1">
+        <div className="lg:order-0 order-1">
           <h2 className="mb-5">Particuliers, Professionnels, Collectivitées</h2>
           <p className="whitespace-pre-line">
             {`Voici des exemples types de réalisations possibles :
