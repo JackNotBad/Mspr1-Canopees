@@ -3,7 +3,7 @@ import hamburger from "./assets/hamburger.png";
 
 export default function Navbar({ toggleMenu }) {
   return (
-    <nav className="absolute top-20 right-20 lg:right-45 flex justify-center p-4 z-40">
+    <nav className="absolute top-20 lg:right-45 right-5 flex justify-center p-4 z-40">
       <ul className="hidden lg:flex lg:space-x-6">
             <li>
                 <Link to="/" className="inline-block py-2 text-lg lg:py-0">Accueil</Link>

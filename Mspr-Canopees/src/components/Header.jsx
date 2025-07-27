@@ -39,7 +39,7 @@ export default function Header() {
           <div className="relative z-20 h-full">
             <Navbar toggleMenu={() => setMenuOpen(true)} />
             <h1
-              className="absolute right-45 flex text-center p-4
+              className="absolute lg:right-45 right-20 flex text-center p-4
             lg:top-30
             top-10
             "
@@ -76,7 +76,7 @@ export default function Header() {
         >
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-20 right-20 p-4 z-40"
+            className="absolute top-20 lg:right-45 right-5 p-4 z-40"
           >
             <img src={close} alt="Fermer le menu" className="cursor-pointer" />
           </button>
