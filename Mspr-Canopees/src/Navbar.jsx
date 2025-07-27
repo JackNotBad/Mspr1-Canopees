@@ -7,7 +7,7 @@ import close from "./assets/close.png"
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false)
   return (
-    <nav className="absolute top-20 z-50 right-45 flex justify-center p-4">
+    <nav className="absolute top-20 z-20 right-20 lg:right-45 flex justify-center p-4">
         <ul className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full pb-5 lg:flex lg:relative lg:flex-row lg:pb-0 lg:justify-center lg:space-x-6`}>
             <li>
                 <Link to="/" className="inline-block py-2 text-lg lg:py-0">Accueil</Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
         className="ml-auto lg:hidden"
         >
             <img 
-            className="w-4"
+            className="cursor-pointer"
             src={showMenu ? close : hamburger} alt={showMenu ? "Cacher le menu" : "Montrer le menu"} />
         </button>
 
