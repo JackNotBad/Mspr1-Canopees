@@ -1,6 +1,8 @@
 import notreHistoire from "../assets/About/notre-histoire.png"
 import nosValeurs from "../assets/About/nos-valeurs.png"
 import notreVision from "../assets/About/notre-vision.png"
+import bob from "../assets/About/bob.png"
+import tom from "../assets/About/tom.png"
 import Carousel from "../components/Carousel";
 import carousel1 from "../assets/About/carouselAbout1.png"
 import carousel2 from "../assets/About/carouselAbout2.png"
@@ -23,6 +25,59 @@ export default function About() {
 
   return (
     <>
+            <section 
+            className="
+              flex flex-col text-center
+              max-w-150 mx-auto p-5 box-content
+              lg:flex-row lg:text-left lg:max-w-300
+            ">
+              <div>
+                <img
+                  src={bob}
+                  className="
+                  object-contain
+                  max-w-50
+                  mx-auto mt-11
+                  lg:mt-0 lg:mx-0 lg:max-w-135 lg:w-135 lg:max-h-130 
+                "
+                  alt="lead of the canopees team"
+                />
+                <div
+                  className="
+                  mb-0 mt-5 text-center
+                  lg:mt-0 lg:mx-10 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-70 
+                ">
+                  <h2>Bob</h2>
+                  <p>Un des deux passionnées de la nature</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus viverra, pretium metus et, condimentum leo. Sed lacus sapien, accumsan ut tellus vel, sollicitudin aliquam ligula. Donec ex metus, vehicula in magna eu, semper pulvinar felis. Curabitur elementum gravida leo, ut fringilla est placerat eu. Suspendisse potenti. Maecenas sapien justo, semper non finibus sit amet, elementum nec arcu. Phasellus vitae mi mollis, rhoncus ex aliquam, pulvinar sem.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src={tom}
+                  className="
+                  object-contain
+                  max-w-50
+                  mx-auto mt-11
+                  lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-130
+                "
+                  alt="lead of the canopees team"
+                />
+                <div
+                  className="
+                  mb-0 mt-5 text-center
+                  lg:mt-0 lg:mx-0 lg:mr-26 lg:max-w-135 lg:w-135 lg:max-h-130 lg:h-70
+                ">
+                  <h2>Tom</h2>
+                  <p>Un des deux passionnées de la nature</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus viverra, pretium metus et, condimentum leo. Sed lacus sapien, accumsan ut tellus vel, sollicitudin aliquam ligula. Donec ex metus, vehicula in magna eu, semper pulvinar felis. Curabitur elementum gravida leo, ut fringilla est placerat eu. Suspendisse potenti. Maecenas sapien justo, semper non finibus sit amet, elementum nec arcu. Phasellus vitae mi mollis, rhoncus ex aliquam, pulvinar sem.
+                  </p>
+                </div>
+              </div>
+            </section>
             <section 
             className="
               flex flex-col text-center
